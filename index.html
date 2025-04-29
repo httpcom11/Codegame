@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كود برو | منصة البرمجة الاحترافية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- مؤشر التحميل -->
+    <div class="loader">
+        <div class="loader-cube">
+            <div class="face"></div>
+            <div class="face"></div>
+            <div class="face"></div>
+            <div class="face"></div>
+            <div class="face"></div>
+            <div class="face"></div>
+        </div>
+        <p>جاري التحميل...</p>
+    </div>
+
+    <!-- خلفية ثلاثية الأبعاد -->
+    <div id="3d-bg"></div>
+
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logo-cube">
+                    <div class="face front">C</div>
+                    <div class="face back">O</div>
+                    <div class="face right">D</div>
+                    <div class="face left">E</div>
+                    <div class="face top">ر</div>
+                    <div class="face bottom">E</div>
+                </div>
+                <span></span>Codegame</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">الرئيسية</a></li>
+                <li><a href="#videos" class="nav-link">عرض المنصة</a></li>
+                <li><a href="#services" class="nav-link">الخدمات</a></li>
+                <li><a href="#portfolio" class="nav-link">أعمالنا</a></li>
+                <li><a href="#pricing" class="nav-link">الباقات</a></li>
+                <li><a href="#offer" class="nav-link">العرض الخاص</a></li>
+                <li><a href="#contact" class="nav-link">اتصل بنا</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary">طلب خدمة</a>
+                <div class="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- القسم الرئيسي -->
+    <section id="home" class="hero">
+        <div class="hero-particles" id="particles-js"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animated-heading">
+                    <span class="text-stroke">منصة</span>
+                    <span class="text-fill">Codegame </span>
+                </h1>
+                <p class="hero-subtitle">حلول <span class="typing-animation"></span></p>
+                <div class="hero-buttons">
+                    <a href="#offer" class="btn btn-primary btn-glow">العرض الحصري</a>
+                    <a href="#videos" class="btn btn-outline">شاهد المنصة</a>
+                </div>
+            </div>
+            <div class="hero-model">
+                <div class="floating-model" id="3d-model"></div>
+                <div class="floating-icons">
+                    <div class="icon html"><i class="fab fa-html5"></i></div>
+                    <div class="icon css"><i class="fab fa-css3-alt"></i></div>
+                    <div class="icon js"><i class="fab fa-js"></i></div>
+                    <div class="icon react"><i class="fab fa-react"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrows">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الفيديوهات الوصفية -->
+    <section id="videos" class="videos-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">تعرف على <span>منصتنا</span></h2>
+                <p class="section-subtitle">شاهد كيف يمكننا تطوير أعمالك الرقمية</p>
+            </div>
+            
+            <div class="videos-container">
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/rz7ndARjnxM" title="فيديو تعريفي عن المنصة" allowfullscreen></iframe>
+                    </div>
+                    <h3>فيديو تعريفي عن المنصة</h3>
+                    <p>شاهد هذا الفيديو للتعرف على خدماتنا ومميزات منصة كود برو</p>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/2RjTr-nKepQ" title=" نتائج التعامل معنا لتطوير مشروعك" allowfullscreen></iframe>
+                    </div>
+                    <h3>كيفية طلب الخدمة</h3>
+                    <p>خطوات سهلة لطلب الخدمة والحصول على منتج احترافي</p>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="أعمال سابقة" allowfullscreen></iframe>
+                    </div>
+                    <h3>أعمال سابقة</h3>
+                    <p>شاهد بعض أعمالنا السابقة وتجارب عملائنا</p>
+                </div>
+            </div>
+            
+            <div class="video-buttons">
+                <a href="https://youtube.com/@codegameagency?si=q-buybfLIeyQBe8l" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-youtube"></i> قناة اليوتيوب
+                </a>
+                <a href="#contact" class="btn btn-primary">اطلب خدمتك الآن</a>
+            </div>
+        </div>
+    </section>
+  
+    <!-- العرض الترويجي -->
+    <section id="offer" class="special-offer">
+        <div class="container">
+            <div class="offer-header">
+                <h2 class="section-title">العرض <span>الحصري</span></h2>
+                <p class="section-subtitle">خصم 50% لفترة محدودة</p>
+            </div>
+            
+            <div class="offer-card">
+                <div class="offer-badge">
+                    <span>خصم 50%</span>
+                </div>
+                <div class="offer-image">
+                    <img src="images/offer-image.jpg" alt="العرض الحصري">
+                    <div class="offer-timer">
+                        <div class="timer-title">ينتهي العرض خلال:</div>
+                        <div class="timer">
+                            <div class="timer-item">
+                                <span id="days">00</span>
+                                <span>أيام</span>
+                            </div>
+                            <div class="timer-item">
+                                <span id="hours">00</span>
+                                <span>ساعات</span>
+                            </div>
+                            <div class="timer-item">
+                                <span id="minutes">00</span>
+                                <span>دقائق</span>
+                            </div>
+                            <div class="timer-item">
+                                <span id="seconds">00</span>
+                                <span>ثواني</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-details">
+                    <h3>الباقة الذهبية الشاملة</h3>
+                    <p class="offer-description">احصل على كل ما تحتاجه لبدء عملك الإلكتروني بخصم 50% لفترة محدودة فقط!</p>
+                    
+                    <div class="offer-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>موقع إلكتروني احترافي 40.000 دج</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>متجر إلكتروني متكامل40.000 دج</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>تطبيق هاتف لنظامي Android و iOS 20.000 دج</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>فيديو تسويقي احترافي 12.000 دج</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>حملة ترويجية لمدة  10 ايام 10.000 دج</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>تصميم كود8.000 دج QR وباركود</span>
+                        </div>
+                    </div>
+                    
+                    <div class="offer-price">
+                        <div class="original-price">90,000 دج</div>
+                        <div class="discounted-price">45,000 دج</div>
+                    </div>
+                    
+                    <div class="offer-buttons">
+                        <a href="#contact" class="btn btn-primary btn-glow">احجز العرض الآن</a>
+                        <a href="#pricing" class="btn btn-outline">عرض جميع الباقات</a>
+                    </div>
+                    
+                    <div class="offer-note">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span>هذا العرض ساري حتى نفاد الأماكن المتاحة</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">خدماتنا <span>المتميزة</span></h2>
+                <p class="section-subtitle">حلول تقنية شاملة لجميع احتياجاتك الرقمية</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div class="icon-3d">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <h3>مواقع إلكترونية</h3>
+                    <p>تصميم مواقع احترافية متجاوبة مع أحدث التقنيات</p>
+                    <div class="service-hover">
+                        <ul>
+                            <li>تصميم متجاوب</li>
+                            <li>واجهة مستخدم فائقة</li>
+                            <li>تحسين لمحركات البحث</li>
+                            <li>سرعة فائقة</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-small">اطلب الآن</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div class="icon-3d">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <h3>متاجر إلكترونية</h3>
+                    <p>منصات بيع متكاملة مع أنظمة دفع وشحن</p>
+                    <div class="service-hover">
+                        <ul>
+                            <li>متاجر متكاملة</li>
+                            <li>أنظمة دفع آمنة</li>
+                            <li>إدارة المخزون</li>
+                            <li>لوحة تحكم متقدمة</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-small">اطلب الآن</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div class="icon-3d">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <h3>تطبيقات الهاتف</h3>
+                    <p>تطبيقات ذكية لنظامي Android و iOS</p>
+                    <div class="service-hover">
+                        <ul>
+                            <li>تصميم فريد</li>
+                            <li>أداء عالي</li>
+                            <li>توافق مع جميع الأجهزة</li>
+                            <li>نشر على المتاجر</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-small">اطلب الآن</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div class="icon-3d">
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                    </div>
+                    <h3>كود QR وباركود</h3>
+                    <p>تصميم أكواد مخصصة لأعمالك بلمسة احترافية</p>
+                    <div class="service-hover">
+                        <ul>
+                            <li>تصميم مخصص</li>
+                            <li>تتبع وتحليل</li>
+                            <li>تعديل ديناميكي</li>
+                            <li>حماية متقدمة</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-small">اطلب الآن</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div class="icon-3d">
+                            <i class="fas fa-video"></i>
+                        </div>
+                    </div>
+                    <h3>فيديوهات تسويقية</h3>
+                    <p>إنتاج فيديوهات احترافية لتسويق منتجاتك</p>
+                    <div class="service-hover">
+                        <ul>
+                            <li>إعلانات جذابة</li>
+                            <li>موشن جرافيك</li>
+                            <li>تعليق صوتي</li>
+                            <li>مؤثرات بصرية</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-small">اطلب الآن</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <div class="icon-3d">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                    </div>
+                    <h3>حملات ترويجية</h3>
+                    <p>حملات تسويقية مكثفة لزيادة انتشار أعمالك</p>
+                    <div class="service-hover">
+                        <ul>
+                            <li>إعلانات مدفوعة</li>
+                            <li>إدارة وسائل التواصل</li>
+                            <li>تحليل النتائج</li>
+                            <li>استهداف دقيق</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-small">اطلب الآن</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم معرض الأعمال -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">معرض <span>أعمالنا</span></h2>
+                <p class="section-subtitle">إبداعنا يتحدث عنا</p>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="websites">مواقع</button>
+                <button class="filter-btn" data-filter="ecommerce">متاجر</button>
+                <button class="filter-btn" data-filter="apps">تطبيقات</button>
+            </div>
+            
+            <div class="portfolio-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="portfolio-item swiper-slide" data-category="websites">
+                        <div class="portfolio-img">
+                            <img src="images/portfolio1.jpg" alt="موقع صالون حلاقة">
+                            <div class="portfolio-overlay">
+                                <h3>صالون حلاقة رجالي</h3>
+                                <p>موقع متكامل لحجز المواعيد وعرض الخدمات</p>
+                                <a href="https://httpcom11.github.io/03/" class="btn btn-outline">عرض التفاصيل</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>صالون حلاقة رجالي</h3>
+                            <span>35,000 دج</span>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item swiper-slide" data-category="websites">
+                        <div class="portfolio-img">
+                            <img src="images/portfolio2.jpg" alt="موقع صالون حلاقة نسائي">
+                            <div class="portfolio-overlay">
+                                <h3>صالون حلاقة نسائي</h3>
+                                <p>موقع أنيق مع معرض أعمال ونظام حجز</p>
+                                <a href="https://httpcom11.github.io/01/" class="btn btn-outline">عرض التفاصيل</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>صالون حلاقة نسائي</h3>
+                            <span>35,000 دج</span>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item swiper-slide" data-category="websites">
+                        <div class="portfolio-img">
+                            <img src="images/portfolio3.jpg" alt="موقع وكالة سياحية">
+                            <div class="portfolio-overlay">
+                                <h3>وكالة سياحية</h3>
+                                <p>منصة لعرض الرحلات وحجزها إلكترونياً</p>
+                                <a href="https://httpcom11.github.io/02/" class="btn btn-outline">عرض التفاصيل</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>وكالة سياحية</h3>
+                            <span>40,000 دج</span>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item swiper-slide" data-category="websites">
+                        <div class="portfolio-img">
+                            <img src="images/portfolio4.jpg" alt="موقع عيادة طبية">
+                            <div class="portfolio-overlay">
+                                <h3>عيادة طبية</h3>
+                                <p>نظام إدارة المواعيد والمرضى للعيادات</p>
+                                <a href="https://httpcom11.github.io/0/" class="btn btn-outline">عرض التفاصيل</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>عيادة طبية</h3>
+                            <span>40,000 دج</span>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item swiper-slide" data-category="ecommerce">
+                        <div class="portfolio-img">
+                            <img src="images/portfolio5.jpg" alt="متجر إلكتروني">
+                            <div class="portfolio-overlay">
+                                <h3>متجر إلكتروني</h3>
+                                <p>منصة بيع متكاملة</p>
+                                <a href="https://httpcom11.github.io/is/" class="btn btn-outline">عرض التفاصيل</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>متجر إلكتروني</h3>
+                            <span>35,000 دج</span>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item swiper-slide" data-category="apps">
+                        <div class="portfolio-img">
+                            <img src="images/portfolio6.jpg" alt="تطبيق هاتف">
+                            <div class="portfolio-overlay">
+                                <h3>تطبيق مطعم</h3>
+                                <p>تطبيق طلب وجبات أونلاين</p>
+                                <a href="#" class="btn btn-outline">عرض التفاصيل</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>تطبيق مطعم</h3>
+                            <span>50,000 دج</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الباقات -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">باقاتنا <span>الاستثنائية</span></h2>
+                <p class="section-subtitle">اختر الباقة التي تناسب مشروعك</p>
+            </div>
+            
+            <div class="pricing-tabs">
+                <button class="pricing-tab active" data-category="all">الكل</button>
+                <button class="pricing-tab" data-category="websites">مواقع</button>
+                <button class="pricing-tab" data-category="ecommerce">متاجر</button>
+                <button class="pricing-tab" data-category="apps">تطبيقات</button>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card" data-category="websites">
+                    <div class="pricing-header">
+                        <h3>الموقع الأساسي</h3>
+                        <div class="price">33,000 <span>دج</span></div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> تصميم 5 صفحات</li>
+                            <li><i class="fas fa-check"></i> استضافة لمدة سنة</li>
+                            <li><i class="fas fa-check"></i> نطاق مجاني</li>
+                            <li><i class="fas fa-check"></i> متجاوب مع الجوال</li>
+                            <li><i class="fas fa-check"></i> دعم فني 3 أشهر</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#contact" class="btn btn-primary">اختر الباقة</a>
+                    </div>
+                    <div class="pricing-badge">الأكثر طلباً</div>
+                </div>
+                
+                <div class="pricing-card featured" data-category="websites,ecommerce">
+                    <div class="pricing-header">
+                        <h3>المتجر الإلكتروني</h3>
+                        <div class="price">35,000 <span>دج</span></div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> تصميم متجر كامل</li>
+                            <li><i class="fas fa-check"></i> نظام دفع إلكتروني</li>
+                            <li><i class="fas fa-check"></i> لوحة تحكم متقدمة</li>
+                            <li><i class="fas fa-check"></i> إدارة المخزون</li>
+                            <li><i class="fas fa-check"></i> دعم فني 6 أشهر</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#contact" class="btn btn-primary">اختر الباقة</a>
+                    </div>
+                    <div class="pricing-badge">عرض خاص</div>
+                </div>
+                
+                <div class="pricing-card" data-category="apps">
+                    <div class="pricing-header">
+                        <h3>تطبيق الهاتف</h3>
+                        <div class="price">25,000 <span>دج</span></div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> تطبيق لنظامي Android و iOS</li>
+                            <li><i class="fas fa-check"></i> واجهة مستخدم فائقة</li>
+                            <li><i class="fas fa-check"></i> قاعدة بيانات سحابية</li>
+                            <li><i class="fas fa-check"></i> إشعارات فورية</li>
+                            <li><i class="fas fa-check"></i> دعم فني 6 أشهر</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#contact" class="btn btn-primary">اختر الباقة</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card" data-category="websites,ecommerce,apps">
+                    <div class="pricing-header">
+                        <h3>الباقة المتكاملة</h3>
+                        <div class="price">90,000 <span>دج</span></div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> موقع إلكتروني متكامل</li>
+                            <li><i class="fas fa-check"></i> متجر إلكتروني</li>
+                            <li><i class="fas fa-check"></i> تطبيق هاتف</li>
+                            <li><i class="fas fa-check"></i> فيديو تسويقي</li>
+                            <li><i class="fas fa-check"></i> دعم فني سنة كاملة</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#contact" class="btn btn-primary">اختر الباقة</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم آراء العملاء -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">آراء <span>عملائنا</span></h2>
+                <p class="section-subtitle">ما يقولونه عنا</p>
+            </div>
+            
+            <div class="testimonials-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-avatar">
+                            <img src="images/client1.jpg" alt="عميل">
+                            <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"لقد كان العمل مع فريق  تجربة رائعة. الموقع الذي صمموه لي تجاوز توقعاتي بكثير وساعد في زيادة مبيعاتي بنسبة 40%"</p>
+                            <div class="testimonial-author">
+                                <h4>محمد أحمد</h4>
+                                <span>مالك صالون حلاقة</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-avatar">
+                            <img src="images/client2.jpg" alt="عميل">
+                            <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"المتجر الإلكتروني الذي أنشأه فريق كود برو سهل عملية البيع بشكل كبير. الدعم الفني ممتاز والنتائج مذهلة"</p>
+                            <div class="testimonial-author">
+                                <h4>سارة خالد</h4>
+                                <span>صاحبة متجر إلكتروني</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-avatar">
+                            <img src="images/client3.jpg" alt="عميل">
+                            <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"تطبيق الهاتف الذي طوروه لشركتنا ساعد في زيادة تفاعل عملائنا بنسبة كبيرة. فريق محترف ومبدع"</p>
+                            <div class="testimonial-author">
+                                <h4>علي حسين</h4>
+                                <span>مدير وكالة سياحية</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الاتصال -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">تواصل <span>معنا</span></h2>
+                <p class="section-subtitle">نحن هنا لمساعدتك في مشروعك القادم</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>الهاتف</h4>
+                            <p>+213 542265590</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>البريد الإلكتروني</h4>
+                            <p>squallyplatform@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>العنوان</h4>
+                            <p>سطيف الجزائر  </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-map">
+                        <div class="map-3d" id="3d-map"></div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61575610228681" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/codegame25/profilecard/?igsh=MXU4bnExbWI2ZzR1YQ==" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="t.me/islamsiouani" class="social-link"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+                
+                <form id="contact-form" class="contact-form">
+                    <h3>أرسل لنا رسالة</h3>
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="الاسم الكامل" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="رقم الهاتف" required>
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="form-group">
+                        <select id="service" required>
+                            <option value="">اختر الخدمة</option>
+                            <option value="website">موقع إلكتروني</option>
+                            <option value="ecommerce">متجر إلكتروني</option>
+                            <option value="app">تطبيق هاتف</option>
+                            <option value="video">فيديو تسويقي</option>
+                            <option value="promotion">حملة ترويجية</option>
+                            <option value="qr">كود QR/باركود</option>
+                            <option value="package">الباقة المتكاملة</option>
+                        </select>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="وصف المشروع" required></textarea>
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <div class="form-group">
+                        <label for="attachment" class="file-label">
+                            <i class="fas fa-paperclip"></i> إرفاق ملف (اختياري)
+                            <input type="file" id="attachment">
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">إرسال الرسالة</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-cube small">
+                            <div class="face front">ك</div>
+                            <div class="face back">C</div>
+                            <div class="face right">O</div>
+                            <div class="face left">D</div>
+                            <div class="face top">E</div>
+                            <div class="face bottom">T</div>
+                        </div>
+                        <span> Codegame</span>
+                    </div>
+                    <p>منصة كود برو تقدم حلولاً رقمية متكاملة بجودة عالية وابتكار متميز لتحقيق أهداف أعمالك في العالم الرقمي.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#services">الخدمات</a></li>
+                        <li><a href="#portfolio">أعمالنا</a></li>
+                        <li><a href="#pricing">الباقات</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>الخدمات</h4>
+                    <ul>
+                        <li><a href="#">برمجة المواقع</a></li>
+                        <li><a href="#">المتاجر الإلكترونية</a></li>
+                        <li><a href="#">تطبيقات الهاتف</a></li>
+                        <li><a href="#">كود QR وباركود</a></li>
+                        <li><a href="#">حملات الترويج</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>النشرة البريدية</h4>
+                    <p>اشترك في نشرتنا البريدية لتصلك آخر العروض والأخبار</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="بريدك الإلكتروني" required>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 كود برو. جميع الحقوق محفوظة islam siouani.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">شروط الخدمة</a>
+                    <a href="#">سياسة الخصوصية</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر العودة للأعلى -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- مكتبات JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
